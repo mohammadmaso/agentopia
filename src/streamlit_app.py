@@ -19,7 +19,7 @@ from schema import ChatHistory, ChatMessage
 # The app heavily uses AgentClient to interact with the agent's FastAPI endpoints.
 
 
-APP_TITLE = "Agent Service Toolkit"
+APP_TITLE = " LLM Agents"
 APP_ICON = "🧰"
 
 
@@ -80,6 +80,7 @@ async def main() -> None:
             agent_client.agent = st.selectbox(
                 "Agent to use",
                 options=[
+                    "text2sql",
                     "research-assistant",
                     "chatbot",
                 ],
